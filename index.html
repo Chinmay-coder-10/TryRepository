@@ -37,7 +37,7 @@ background:#F3FAFB;
 }
 </style>
   </head>
-  <body>
+  <body onscroll="myFunction();">
 <div class="header">
   <h2>Scroll Indicator</h2>
   <div class="progress-container">
@@ -98,9 +98,7 @@ function myFunction() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
-}
-
-window.onscroll = myFunction();
+};
 </script>
 </body>
 </html>
