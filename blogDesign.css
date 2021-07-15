@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.blogCard {
+  height: 186px;
+  background: linear-gradient(to bottom right, #ff9a56, #ff7925);
+  margin: 25px;
+  border-radius: 10px;
+}
+
+.thumbnailimg {
+  margin-top: 9px;
+  align-self: center;
+  height: 125px;
+  width: 125px;
+  border-radius: 200px;
+  border: 2px solid black;
+}
+.textP {
+  position: absolute;
+  top: 34px;
+  right: 386px;
+  font-size: x-large;
+  color: white;
+}
+
+a,
+a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+a:before,
+a:after,
+a > span:before,
+a > span:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+.start-reading {
+  color: purple;
+  text-decoration: none;
+  top: 9px;
+  width: fit-content;
+  display: inline-block;
+  overflow: hidden;
+  font-weight: 500;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  top: 4px;
+  left: -4px;
+  font-size: x-large;
+  font-family: "Poppins", sans-serif;
+}
+.start-reading:hover {
+  color: white;
+}
+.start-reading:before,
+.start-reading:after {
+  right: 0;
+  bottom: 0;
+  background: #072ff3;
+}
+.start-reading:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+}
+.start-reading:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(100%);
+}
+.start-reading > span {
+  display: flex;
+  padding: 10px;
+}
+.start-reading > span:before,
+.start-reading > span:after {
+  left: 0;
+  top: 0;
+  background: #072ff3;
+}
+.start-reading > span:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(100%);
+}
+.start-reading > span:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+.start-reading:hover:before,
+.start-reading:hover:after,
+.start-reading:hover > span:before,
+.start-reading:hover > span:after {
+  transform: translate(0, 0);
+}
+
+/* For mobiles */
+@media screen and (max-width: 600px) {
+  body {
+    background: #f3fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blogCard {
+    margin: 2px;
+    color: white;
+    border-radius: 19px;
+    height: 25vh;
+    width: 93vw;
+    box-shadow: 0px 10px 22px 3px rgb(41 40 40 / 36%);
+    background: linear-gradient(#fb8434, #fb6d17);
+  }
+
+  .textP {
+    margin: 18px;
+    margin-right: 0;
+    margin-left: 119px;
+    font-size: 20px;
+    margin-top: -25px;
+    position: absolute;
+    top: 0;
+  }
+}
